@@ -16,6 +16,7 @@
     <a-scene environment="preset: forest">
       <a-assets>
         <a-asset-item id="trex" src="../assets/trex/TRex.glb"></a-asset-item>
+        
       </a-assets>
       
       <a-entity id="rig" movement-controls position="0 0 10">
@@ -34,6 +35,7 @@
       
       
       <a-asset-item id="tiser" response-type="arraybuffer" src="img/overpowered_stegosaurus.glb"></a-asset-item>
+      <a-image src="img/tiran.png" position="8.5 8 -35"scale="5 5 5"></a-image>
       <a-text value="" color="black" position="-0.3 3 -5"></a-text>
       <a-entity  position="28 0.-7.5" id="snake-entity" gltf-model="#tiser" animation-mixer="clip:Bite" scale="5 5 5"></a-entity>
       
@@ -43,6 +45,7 @@
       <a-asset-item id="skel" response-type="arraybuffer" src="img/triceratops.glb"></a-asset-item>
 
       
+      <a-image src="img/tricer.png" position="-10 5 -3" scale="5 5 5"></a-image>
       <a-text value="" color="black" position="-5.7 0 -5"></a-text>
 
       
@@ -50,12 +53,12 @@
       -------------
 
       <a-asset-item id="shiny_fish" response-type="arraybuffer" src="img/overpowered_triceratops.glb"></a-asset-item>
-
+      <a-image src="img/ste.png" position="28 8.8 0 -5" scale="5 5 5"></a-image>
       
       <a-text value="" color="black" position="5.1 0 -5"></a-text>
 
       
-      <a-entity  position="23 0 12" id="snake-entity" gltf-model="#shiny_fish" animation-mixer="clip:Bite" scale="3 3 3" ></a-entity>
+      <a-entity  position="23 0 12" id="snake-entity" gltf-model="#shiny_fish" animation-mixer="clip:Bite" scale="3 3 3"></a-entity>
       ------------
       <a-asset-item id="deer" response-type="arraybuffer" src="img/"></a-asset-item>
 
@@ -66,8 +69,8 @@
       ------------------
       <a-asset-item id="coco" response-type="arraybuffer" src="img/mamen_river_dragon.glb"></a-asset-item>
 
-      
-      <a-text value="" color="black" position="10.2 3 -5"></a-text>
+      <a-image src="img/mame.png" position="40 10 -30" scale="5 5 5"></a-image>
+      <a-text value="" color="black" position="35 19 -30" scale="8 8 8"></a-text>
 
       
       <a-entity  position="50 0.5 -30" id="snake-entity" gltf-model="#coco" animation-mixer="clip:Bip001|Take 001|BaseLayer" scale="3 3 3"></a-entity>
@@ -101,15 +104,22 @@
       <a-entity  position="-19 0 9" id="tree-entity" gltf-model="#rad" animation-mixer="clip:Animation" ></a-entity>
       
       <a-asset-item id="flyy1" response-type="arraybuffer" src="img/animated_flying_pteradactal_dinosaur_loop.glb"></a-asset-item>
-      <a-entity  position="8 5 20" id="tree-entity" gltf-model="#flyy1" animation-mixer="clip:Animation" scale="5 5 5" ></a-entity>
+      <a-image src="img/pte.png" position="0 4 20 "scale="3 3 3" rotation="0 180 0"></a-image>
+      <a-entity  position="0 -1 20" id="tree-entity" gltf-model="#flyy1" animation-mixer="clip:Animation" scale="5 5 5" ></a-entity>
       
 
       <a-asset-item id="velo" response-type="arraybuffer" src="img/overpowered_velociraptor.glb"></a-asset-item>
-      <a-entity  position="0 0 9" id="tree-entity" gltf-model="#velo" animation-mixer="clip:Idle" scale="2.2 2.2 2.2" rotation="0 90 0"></a-entity>
+      <a-image src="img/velo.png" position="0 4 10 "scale="3 3 3"rotation="0 180 0"></a-image>
+      <a-entity  position="0 0 9" id="tree-entity" gltf-model="#velo" animation-mixer="clip:Idle" scale="2.2 2.2 2.2" rotation="0 180 0"></a-entity>
 
       
+      <a-asset-item id="mam" response-type="arraybuffer" src="img/mammoth.glb"></a-asset-item>
+      <a-image src="img/mem.jpg" position="25 3 26.5"scale="5 5 5" rotation="0 180 0"></a-image>
+      <a-entity  position="18 0.11 30" id="tree-entity" gltf-model="#mam" animation-mixer="clip:" scale="2 2 2" rotation="0 180 0"></a-entity>
 
-
+      <a-asset-item id="g1" response-type="arraybuffer" src="img/pine_tree_01.glb"></a-asset-item>
+      <a-entity  position="5 0 -12" id="g-entity" gltf-model="#g1" animation-mixer="clip:"scale="10 10 10" rotation="0 360 0"></a-entity>
+      <a-sound src="src: url(1234.mp3)" autoplay="true" position="0 2 5"></a-sound>
       
 
       <a-camera position="0 1.6 0">
@@ -120,6 +130,8 @@
     
     
     </a-scene>
+   
+   
 
 
   </body>
